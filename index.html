@@ -9,7 +9,13 @@
         Name: <input type="text" id="commenterName"><br>
         Comment: <input type="textarea" id="commentText"><br>
         <input type="submit">
-  </form>
+      </form>
+      <form id="post-form" onsubmit="createPost();return false;">
+        Title: <input type="text" id="title"><br>
+        Body: <input type="text" id="body"><br>
+        Author: <input type="text" id="author"><br>
+      </form>
+  
     </main>
     <script src="node_modules/lodash/lodash.min.js"></script>
     <script src="index.js"></script>
